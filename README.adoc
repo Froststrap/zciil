@@ -1,0 +1,12 @@
+Zig Computer Instrumentation Information Library
+================================================
+
+A Zig-written library which wraps around certain ABI's to be able to
+get certain instrumentation data, like what WMI or CIM on Windows would do.
+
+This library should work on any language if you extend the C ABI that zig will output.
+
+
+== Licensing
+
+This project managed under Frostrap, with a Code License of  MPL-2.0 license. link:./LICENSE[Read the LICENSE].
