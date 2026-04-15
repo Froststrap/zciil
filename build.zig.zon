@@ -1,0 +1,12 @@
+.{
+    .name = .zciil,
+    .version = "0.0.1",
+    .fingerprint = 0xebee5aacc1b62804,
+    .minimum_zig_version = "0.15.2",
+    .dependencies = .{},
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "src",
+    },
+}
