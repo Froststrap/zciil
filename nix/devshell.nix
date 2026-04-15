@@ -1,10 +1,12 @@
 {
   mkShell,
   zig,
-  zls
+  zls,
+  typos
 }:
 mkShell {
   packages = [
+    typos
     zig
     zls
   ];
