@@ -1,0 +1,14 @@
+[[language]]
+name = "matlab"
+file-types = []
+
+[[language]]
+name = "objective-c"
+scope = "source.c"
+injection-regex = "c"
+file-types = ["m", "M", "MM", "mm"]
+comment-token = "//"
+grammar = "c"
+block-comment-tokens = { start = "/*", end = "*/" }
+language-servers = [ "clangd" ]
+indent = { tab-width = 4, unit = "    " }
