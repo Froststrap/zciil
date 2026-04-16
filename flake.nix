@@ -12,7 +12,7 @@
     devShells = forAllSystems (system: let
       pkgs = import inputs.nixpkgs { inherit system; };
     in rec {
-      zciil = pkgs.callPackage ./nix/devshell.nix {};
+      zciil = pkgs.callPackage ./nix/devShell.nix {};
       default = zciil;
     });
   };
