@@ -1,5 +1,12 @@
 const std = @import("std");
+pub const smbios = @import("smbios.zig");
+pub const builtin = @import("builtin");
 
-pub export fn testing() [*:0]const u8 {
-    return "Hello! :3";
+comptime {
+    if (!(builtin.os.tag == .linux or builtin.os.tag == .macos)) {
+        @compileError(std.fmt.comptimePrint(
+            "{s} is an unsupported compile target",
+            .{@tagName(builtin.os.tag)},
+        ));
+    }
 }
